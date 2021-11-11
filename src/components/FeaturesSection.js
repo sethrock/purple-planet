@@ -36,24 +36,7 @@ export default class FeaturesSection extends React.Component {
             >
                 <div className="item__content grid items-center">
                     {hasMedia && (
-                        <div
-                            className={classNames('feature__media', 'my-2', 'cell-12', {
-                                'cell-md-4': isHorizontal && mediaWidth === 'thirty-three',
-                                'cell-md-5': isHorizontal && mediaWidth === 'fourty',
-                                'cell-md-6': isHorizontal && mediaWidth === 'fifty',
-                                'cell-md-7': isHorizontal && mediaWidth === 'sixty'
-                            })}
-                        >
-                            {videoEmbed ? htmlToReact(videoEmbed)
-                                : <img
-                                    src={withPrefix(image)}
-                                    alt={imageAlt}
-                                    className={classNames({
-                                        'mx-auto': alignX === 'center',
-                                        'ml-auto': alignX === 'right'
-                                    })}
-                                />}
-                        </div>
+                        
                     )}
                     {hasText && (
                         <div
