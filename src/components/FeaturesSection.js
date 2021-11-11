@@ -35,7 +35,7 @@ export default class FeaturesSection extends React.Component {
                 })}
             >
                 <div className="item__content grid items-center">
-                    {hasMedia && (
+                    {hasMedia && (<div class="cryptohopper-web-widget" data-id="1" data-table_title="Crypto Markets " data-realtime="on" data-atid="25508"></div>
                         
                     )}
                     {hasText && (
